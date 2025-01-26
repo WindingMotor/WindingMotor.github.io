@@ -1,12 +1,52 @@
-body {
-    font-family: Arial, sans-serif;
-    margin: 40px auto;
-    max-width: 800px;
-    line-height: 1.6;
-    padding: 0 10px;
+@font-face {
+    font-family: 'randsom';
+    src: url('/images/randsom.ttf');
 }
 
-h1 {
-    color: #333;
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'randsom', monospace;
+    background-image: url('../images/binding_dark.webp');
+    background-repeat: repeat;
+    color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     text-align: center;
+    cursor: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="40" height="48" viewport="0 0 100 100" style="fill:black;font-size:24px;"><text y="50%">✂️</text></svg>'), auto;
+}
+
+header, main {
+    width: 100%;
+}
+
+h1{
+    font-size: 5em;
+}
+
+h2{
+    font-size: 2em;
+}
+
+h1, h2 {
+    font-family: 'randsom', monospace;
+    font-weight: 400;
+    text-shadow: 2px 2px 4px rgba(255,0,0,0.3);
+    letter-spacing: 2px;
+}
+
+@keyframes subtleShake {
+    0%, 100% { transform: translate(0, 0) rotate(0deg); }
+    25% { transform: translate(-0.5px, -0.5px) rotate(-0.5deg); }
+    75% { transform: translate(0.5px, 0.5px) rotate(0.5deg); }
+}
+
+.shake:hover {
+    animation: subtleShake 0.1s infinite;
 }
