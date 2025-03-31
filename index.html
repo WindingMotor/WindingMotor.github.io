@@ -2,20 +2,314 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Isaac Subudhi - Ransom Note Portfolio</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Isaac Subudhi - Software Developer</title>
   <link rel="stylesheet" href="styles/main.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
   <header>
-    <h1 class="typewriter shake">Isaac Subudhi</h1>
+    <nav class="navbar container">
+      <a href="#" class="logo">Isaac<span class="highlight">.</span>S</a>
+      <ul class="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
   </header>
-  
+
   <main>
-    <section id="about">
-      <h2 class="typewriter shake">Who Am I?</h2>
+    <!-- Hero Section -->
+    <section class="hero container">
+      <div class="hero-content">
+        <h1>Hi, I'm <span class="highlight">Isaac Subudhi</span></h1>
+        <p>Also known as <span class="highlight">WindingMotor</span></p>
+        <p>A software developer and robotics enthusiast gwho loves to create innovative solutions through programming, CAD design, and 3D printing.</p>
+        <div class="hero-buttons">
+          <a href="#projects" class="btn">View My Work</a>
+          <a href="#contact" class="btn btn-outline">Contact Me</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="container">
+      <h2 class="section-title">About Me</h2>
+      <p class="section-subtitle">Get to know who I am!</p>
+        <div class="about-content">
+          <p>I'm a high school senior at Goochland High School with a passion for software development, robotics, and problem-solving. My journey in technology started when I joined my high school's FIRST Robotics team as an 8th grader during the 2020-2021 school year.</p>
+          <br>
+          <p>As the Programming Lead for our robotics team, I've developed expertise in Java and Kotlin, created vision systems using odometry and fiducials, and integrated mechanical systems with software. My work with the team earned me the FIRST Dean's List Semi-Finalist Award, recognizing my technical contributions and leadership.</p>
+          <br>
+          <p>Beyond robotics, I've expanded my skills in various programming languages and technologies, including Python, Flutter/Dart, C++, and web development. I enjoy working on diverse projects, from mobile apps to 3D printing solutions for my community.</p>
+          <br>
+          <p>I'm pursuing an AAS in Social Sciences at Reynolds Community College while completing my high school education. With a GPA of 4.07 and a growing portfolio of technical projects, I'm excited about the future possibilities in software development and engineering.</p>
+        </div>
+ 
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="container">
+      <h2 class="section-title">My Projects</h2>
+      <p class="section-subtitle">A showcase of my technical work and creative solutions</p>
+      
+      <div class="projects-grid">
+        <!-- Project 1 -->
+        <div class="project-card">
+          <div class="project-content">
+            <h3 class="project-title">SwerveDrive2025</h3>
+            <p class="project-description">Robot programming for the FIRST Robotics Competition, implementing advanced swerve drive control systems with fully automated vision based odometry and fiducial tracking.</p>
+            <div class="project-tags">
+              <span class="tag">Java</span>
+              <span class="tag">Robotics</span>
+              <span class="tag">Vision Systems</span>
+            </div>
+            <div class="project-links">
+              <a href="https://github.com/WindingMotor/SwerveDrive2025" class="btn btn-outline">View on GitHub</a>
+            </div>
+          </div>
+        </div>
+        
+        <!-- Project 2 -->
+        <div class="project-card">
+          <div class="project-content">
+            <h3 class="project-title">Blossom Player</h3>
+            <p class="project-description">Cross-platform open source iOS mobile focused music player application with custom UI and audio streaming capabilities.</p>
+            <div class="project-tags">
+              <span class="tag">Flutter</span>
+              <span class="tag">Dart</span>
+              <span class="tag">Mobile</span>
+            </div>
+            <div class="project-links">
+              <a href="https://github.com/WindingMotor/Blossom-Player" class="btn btn-outline">GitHub</a>
+              <a href="https://testflight.apple.com/join/uYtkAs1m" class="btn btn-outline">iOS Download</a>
+            </div>
+          </div>
+        </div>
+        
+        <!-- Project 3 -->
+        <div class="project-card">
+          <div class="project-content">
+            <h3 class="project-title">Junkyard Dogs Website</h3>
+            <p class="project-description">Designed and developed the robotics team's website using modern web technologies. I serve as the main webmaster updating content for the team.</p>
+            <div class="project-tags">
+              <span class="tag">HTML</span>
+              <span class="tag">CSS</span>
+              <span class="tag">JavaScript</span>
+              <span class="tag">Bootstrap</span>
+            </div>
+            <div class="project-links">
+              <a href="https://github.com/WindingMotor/JunkyardDogsWebsite" class="btn btn-outline">View on GitHub</a>
+            </div>
+          </div>
+        </div>
+        
+        <!-- Project 4 -->
+        <div class="project-card">
+          <div class="project-content">
+            <h3 class="project-title">PathPlanner Contributor</h3>
+            <p class="project-description">Contributed to the PathPlanner project, a flutter app that allows FRC teams to generate advanced autonomous paths for their robots. Overhauled entire UI making it more user friendly and intuitive.</p>
+            <div class="project-tags">
+              <span class="tag">Flutter</span>
+              <span class="tag">Dart</span>
+              <span class="tag">FRC</span>
+            </div>
+            <div class="project-links">
+              <a href="https://github.com/mjansen4857/pathplanner/pull/705" class="btn btn-outline">View on GitHub</a>
+            </div>
+          </div>
+        </div>
+        
+        <!-- Project 5 -->
+        <div class="project-card">
+          <div class="project-content">
+            <h3 class="project-title">KSP WPILIB Library</h3>
+            <p class="project-description">Innovative simulation project combining Kerbal Space Program with FRC's WPILIB for training programmers. Allows new programmers to learn Java basics with a command based environment.</p>
+            <div class="project-tags">
+              <span class="tag">Java</span>
+              <span class="tag">KSP</span>
+              <span class="tag">Simulation</span>
+            </div>
+            <div class="project-links">
+              <a href="https://github.com/username/KSP-WPILIB" class="btn btn-outline">View on GitHub</a>
+            </div>
+          </div>
+        </div>
+        
+        <!-- Project 6 -->
+        <div class="project-card">
+          <div class="project-content">
+            <h3 class="project-title">3D Model Search Engine</h3>
+            <p class="project-description">Web scraping platform to collect 3D model information from Printables, Thingiverse, and MakerWorld. Enabling internet wide access to finding 3D models.</p>
+            <div class="project-tags">
+              <span class="tag">Python</span>
+              <span class="tag">Web Scraping</span>
+              <span class="tag">3D Printing</span>
+            </div>
+            <div class="project-links">
+              <a href="#" class="btn btn-outline">In Development</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="container">
+      <h2 class="section-title">My Skills</h2>
+      <p class="section-subtitle">Technologies and tools I work with</p>
+      
+      <div class="skills-container">
+        <!-- Category 1 -->
+        <div class="skill-category">
+          <h3>Programming Languages</h3>
+          <ul class="skills-list">
+            <li>Java & Kotlin</li>
+            <li>Python</li>
+            <li>C++</li>
+            <li>Dart</li>
+            <li>JavaScript</li>
+            <li>C#</li>
+          </ul>
+        </div>
+        
+        <!-- Category 2 -->
+        <div class="skill-category">
+          <h3>Frameworks & Technologies</h3>
+          <ul class="skills-list">
+            <li>Flutter</li>
+            <li>WPILIB (FRC)</li>
+            <li>Unity & Godot</li>
+            <li>HTML & CSS</li>
+            <li>Bootstrap</li>
+            <li>Arduino & ESP32</li>
+          </ul>
+        </div>
+        
+        <!-- Category 3 -->
+        <div class="skill-category">
+          <h3>CAD & 3D Printing</h3>
+          <ul class="skills-list">
+            <li>OnShape & Fusion 360</li>
+            <li>3D Printer Maintenance</li>
+            <li>Rapid Prototyping</li>
+            <li>Mechanical Design</li>
+            <li>3D Model Optimization</li>
+            <li>Robot Design</li>
+          </ul>
+        </div>
+        
+        <!-- Category 4 -->
+        <div class="skill-category">
+          <h3>Leadership & Mentoring</h3>
+          <ul class="skills-list">
+            <li>Team Leadership</li>
+            <li>Technical Mentoring</li>
+            <li>Workshop Facilitation</li>
+            <li>Recruitment & Onboarding</li>
+            <li>Knowledge Transfer</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience" class="container">
+      <h2 class="section-title">Experience</h2>
+      <p class="section-subtitle">My leadership and technical roles</p>
+      
+      <div class="timeline">
+        <div class="timeline-item">
+          <div class="timeline-content">
+            <h3>Programming Lead, High School FIRST Robotics Team</h3>
+            <p class="timeline-date">2023 - 2025</p>
+            <ul>
+              <li>Led a team of programmers developing software for competition robots</li>
+              <li>Mentored new members in Java through interactive lessons</li>
+              <li>Coordinated with other team members for hardware-software integration</li>
+              <li>Main programmer for three consecutive competition seasons</li>
+            </ul>
+          </div>
+        </div>
+        
+        <div class="timeline-item">
+          <div class="timeline-content">
+            <h3>Webmaster, Robotics Team Website</h3>
+            <p class="timeline-date">2023 - 2025</p>
+            <ul>
+              <li>Designed and developed the team website using HTML, CSS, and JavaScript</li>
+              <li>Implemented bootstrap and CSS for responsive design</li>
+              <li>Enabled SEO optimization and analytics</li>
+            </ul>
+          </div>
+        </div>
+        
+        <div class="timeline-item">
+          <div class="timeline-content">
+            <h3>STEM Summer Camp Mentor</h3>
+            <p class="timeline-date">June 2024</p>
+            <ul>
+              <li>Mentored aspiring engineers in a week-long STEM focused summer camp</li>
+              <li>Coordinated lesson plans and slideshows with staff</li>
+              <li>Taught skills needed to build competition-ready robots</li>
+            </ul>
+          </div>
+        </div>
+        
+        <div class="timeline-item">
+          <div class="timeline-content">
+            <h3>Middle School Robotics Mentor</h3>
+            <p class="timeline-date">Dec 2023 - Jan 2024</p>
+            <ul>
+              <li>Helped found a rookie FIRST Tech Challenge Middle School robotics team</li>
+              <li>Taught engineering concepts, block-based programming, and electronics</li>
+              <li>Focused on creating sustainable knowledge transfer for future members</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="container">
+      <h2 class="section-title">Get In Touch</h2>
+      <p class="section-subtitle">Interested in working together? Let's connect!</p>
+      
+      <div class="contact-container">
+        <div class="contact-info">
+          <div class="contact-item">
+            <i class="fas fa-envelope"></i>
+            <p>isaac.subudhi@gmail.com</p>
+          </div>
+          <div class="contact-item">
+            <i class="fas fa-map-marker-alt"></i>
+            <p>Goochland, VA 23063</p>
+          </div>
+          <div class="contact-links">
+            <a href="https://github.com/username" class="btn btn-outline">GitHub</a>
+            <a href="images/resume2024.pdf" class="btn">Download Resume</a>
+          </div>
+          <div style="margin-top: 1rem;"></div>
+        </div>
+      </div>
     </section>
   </main>
 
-  <script src="scripts/typewriter.js"></script>
+  <footer>
+    <div class="container footer-content">
+      <p>&copy; 2025 Isaac Subudhi. All rights reserved.</p>
+      <div class="social-links">
+        <a href="https://github.com/WindingMotor"><i class="fab fa-github"></i></a>
+        <a href="https://www.linkedin.com/in/isaac-subudhi-758a83186/"><i class="fab fa-linkedin"></i></a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="scripts/main.js"></script>
 </body>
 </html>
